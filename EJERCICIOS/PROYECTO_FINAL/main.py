@@ -68,4 +68,4 @@ def ahorcado():
         print(f'¡Excelente! ¡Adivinaste la palabra {palabra}!')
 
 
-    ahorcado()
+ahorcado()

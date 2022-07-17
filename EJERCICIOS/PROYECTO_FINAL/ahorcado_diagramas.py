@@ -5,7 +5,7 @@ vidas_diccionario_visual = {
                |/        ( )
                |          |
                |         / \\
-               |    Hola licenciada diana
+               |        MUERTO
                |
            """,
         1: """
