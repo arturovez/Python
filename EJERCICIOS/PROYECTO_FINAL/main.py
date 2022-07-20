@@ -2,19 +2,21 @@
 Proyecto Básico de Python (El Ahorcado).
 Basado en el proyecto de: Kylie Ying (@kylieyying). 
 """
+#importa librerías estandar y las escritas para este programa
 import random
 import string
 from palabras import palabras
 from ahorcado_diagramas import vidas_diccionario_visual
 
-
+#define una función
 def obtener_palabra_válida(palabras):
+    #selecciona una palabra aleaoria de la lista ppalabras
     palabra = random.choice(palabras) 
 
 
     while '-' in palabra or ' ' in palabra:
         palabra = random.choice(palabras)
-
+#regresa palabra en mayusculas
     return palabra.upper()
 
 
@@ -41,7 +43,7 @@ def ahorcado():
         print(vidas_diccionario_visual[vidas]) 
         print(f"Palabra: {' '.join(palabra_lista)}") 
 
-     
+     #ingresa una letra en mayusculas
         letra_usuario = input('Escoge una letra: ').upper()
 
         if letra_usuario in abecedario - letras_adivinadas:
